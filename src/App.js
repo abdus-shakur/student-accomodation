@@ -40,10 +40,10 @@ function App() {
         <CssBaseline />
       <GlobalStyles />
       <div className="App">
-      {/* <Switch sx={{position:'fixed',zIndex:99999,top:'1rem',left:'10rem'}}
+      <Switch sx={{position:'fixed',zIndex:99999,top:'1rem',left:'10rem'}}
                 checked={mode === 'dark'}
                 onChange={toggleMode}
-              /> */}
+              />
         <PageRouter/>
       </div>
       </ThemeProvider>

@@ -48,7 +48,7 @@ export var hotelData = [
     {
         name:"The Stay Club North Acton",
         imageUrl:"https://casita-img.imgix.net/uploads/buildings/111652/building/orig/the-stay-club-north-acton-london-191289940020221123023753PM.jpeg?auto=compress,format&trim=auto&fit=clamp",
-        address:'200 Western Ave, London W3 6FW',
+        address:'200 Western Ave, London W3 6FW, Thomas-upon-Thames, KT8',
         travelMetrics:'49 mins by public transport to Central London',
         policies:['Studio'],
         additions:['PBSA','Family Friendly - T&C Applied'],
