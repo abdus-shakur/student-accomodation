@@ -1,0 +1,37 @@
+.leaflet-container{
+    width:600px;
+    height:600px;
+}
+
+@media screen and (max-width:800px){
+    .leaflet-container{
+        width:500px;
+    }
+}
+
+@media screen and (max-width:600px){  
+    .leaflet-container{
+        width:300px;
+    }
+}
+
+@media screen and (max-height:720px){
+    .leaflet-container{
+        height:350px;
+    }
+}
+
+@media screen and (max-height:600px){
+    .leaflet-container{
+        height:300px;
+    }
+}
+
+
+.leaflet-popup-content{
+    margin: 10px 16px 10px 10px !important;
+}
+
+.leaflet-popup-content p {
+    margin: 0 !important;
+}
