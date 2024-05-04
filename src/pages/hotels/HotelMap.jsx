@@ -1,4 +1,4 @@
-import { Box, Paper, Typography } from "@mui/material";
+import { Box, Button, Paper, Typography } from "@mui/material";
 import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
 import './map.scss'
 import 'leaflet/dist/leaflet.css';
@@ -17,6 +17,12 @@ function HotelMarker(props){
     if(!lng){
         lng = -0.09;
     }
+
+    function launchGoogleMapDirection(lat,lng){
+      let googleMapUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+      window.open(googleMapUrl, '_blank', 'toolbar=0,location=1,menubar=0');
+    }
+
     return <>
         <Marker position={[lat, lng]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41], iconAnchor: [12, 41]})}>
             <Popup>
@@ -27,6 +33,10 @@ function HotelMarker(props){
             <Box >
                 <Typography sx={{fontWeight:'700'}}>{data.name}</Typography>
                 <Typography sx={{fontSize:'0.8rem'}}>{data.address}</Typography>
+                <Button variant="contained" color="success"onClick={()=>launchGoogleMapDirection(lat,lng)}>Drive to Location</Button>
+            </Box>
+            <Box>
+              
             </Box>
             </Box>
             </Popup>
